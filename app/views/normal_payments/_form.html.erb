@@ -1,0 +1,24 @@
+<%= form_with(model: normal_payment, local: true) do |form| %>
+  <% if normal_payment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(normal_payment.errors.count, "error") %> prohibited this normal_payment from being saved:</h2>
+
+      <ul>
+      <% normal_payment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+Create normal payment
+
+ingresa nombre          [              ]
+ingresa tarjeta credito [              ]
+
+{enviar}

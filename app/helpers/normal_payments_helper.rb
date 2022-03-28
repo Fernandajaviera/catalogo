@@ -1,0 +1,2 @@
+module NormalPaymentsHelper
+end
